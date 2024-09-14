@@ -1,13 +1,49 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+/* Para navegadores baseados em WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-track {
+  background: black; /* Cor de fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(252, 252, 252); /* Cor da "mão" da barra de rolagem */
+  border-radius: 10px; /* Arredondamento das bordas do "thumb" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Cor do "thumb" ao passar o mouse sobre ele */
+}
+
+/* Para navegadores baseados em Gecko (Firefox) */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Define a largura da barra de rolagem */
+  scrollbar-color: black black; /* Cor do "thumb" e da trilha */
+}
+
+/* Para elementos específicos */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: black;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
