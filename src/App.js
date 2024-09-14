@@ -55,6 +55,7 @@ function App() {
           </div>
         </div>
       </nav>
+
       <div id='Home'>
         <div id='background-home'>
           <div>
@@ -67,6 +68,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div id='Beneficios' className='sobresos'>
         <div className='sobrenos-text'>
           <div>
@@ -100,6 +102,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div id='Portifolio'>
         <div className='portifolio-container'>
           <p className='tittle-visaogeral'>Portifolio</p>
@@ -135,6 +138,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div id='visaogeral' className="visaogeral">
         <p className='tittle-visaogeral'>Visao Geral</p>
         <div className="visaogeral-container">
@@ -196,6 +200,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div id='Qualidade'>
         <div>
           <div>
@@ -206,6 +211,7 @@ function App() {
           </div>
         </div>
       </div>
+      
       <div id='Formulario'>
         <div className='formulario--main'>
           <div className='texts-form'>
@@ -217,34 +223,34 @@ function App() {
           </div>
         </div>
       </div>
+
+
       <footer>
-        <div className='footer-links'>
-          <div className='footer-ul'>
-            <div>
-              <img src={Logo} alt="" />
-            </div>
-            <div>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#quemsomos">Quem Somos?</a></li>
-              </ul>
-              
-            </div>
-            
+        <div className="footer-links">
+          <div className="footer-logo">
+            <img src={Logo} alt="Logo" />
           </div>
-          
+          <div className="footer-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#beneficios">Benefícios</a></li>
+              <li><a href="#quemsomos">Quem Somos?</a></li>
+            </ul>
+          </div>
         </div>
-        <div className='footer-social'>
-          <p>Siga-nos nas redes sociais</p>
+        <div className="footer-social">
           <ul>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com" aria-label="Facebook" className="social-icon facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com" aria-label="Instagram" className="social-icon instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" aria-label="Twitter" className="social-icon twitter"><i class="fab fa-twitter"></i></a></li>
           </ul>
         </div>
+        <div className="footer-bottom">
+          <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        </div>
       </footer>
+
     </div>
   );
 }
