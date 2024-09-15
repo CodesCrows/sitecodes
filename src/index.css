@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body{
   background-color: black;
@@ -8,7 +9,7 @@ body{
 }
 /* Para navegadores baseados em WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 12px; /* Largura da barra de rolagem */
+  width: 3px; /* Largura da barra de rolagem */
 }
 
 ::-webkit-scrollbar-track {

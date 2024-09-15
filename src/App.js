@@ -43,14 +43,14 @@ function App() {
     <div className="Container">
       <nav>
         <div className='navbar-container'>
-          <img className='logo-codecrows' src={Logo} alt="" />
+          <img className='logo-codecrows' src={Logo} alt="" width={75} />
           <ul className='list-navbar'>
             <li><a className='list-nav' href="#Home">Home</a></li>
+            <li><a className='list-nav' href="#Beneficios">Beneficios</a></li>
             <li><a className='list-nav' href="#Portifolio">Portifolio</a></li>
             <li><a className='list-nav' href="#visaogeral">Quem Somos?</a></li>
-            <li><a className='list-nav' href="#Beneficios">Beneficios</a></li>
           </ul>
-          <div>
+          <div className="svg-wrapper">
             <span className='button-navbar'>Começar</span>
           </div>
         </div>
@@ -211,7 +211,7 @@ function App() {
           </div>
         </div>
       </div>
-      
+
       <div id='Formulario'>
         <div className='formulario--main'>
           <div className='texts-form'>
@@ -247,7 +247,7 @@ function App() {
           </ul>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+          <p>&copy; 2024 CodeCrows. Todos os direitos reservados.</p>
         </div>
       </footer>
 
