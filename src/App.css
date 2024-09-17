@@ -4,6 +4,7 @@
 .Container {
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 /* ========== NAV ========== */
@@ -509,87 +510,7 @@ nav {
 
 /* ========================= */
 /* ========== Sobrenos ========== */
-#Portifolio {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  object-fit: cover;
-  width: 99%;
 
-}
-
-.portifolio-container {
-  width: 89%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: black;
-}
-
-.portifolio-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 1rem;
-}
-
-.item-portifolio {
-  width: 100%;
-  border: solid 1px #0e0f12;
-  border-radius: 15px;
-  padding-bottom: 0.5rem;
-}
-
-.image-portifolio {
-  width: 100%;
-  /* Ocupa 100% da largura da tela */
-  height: 340px;
-  /* Altura desejada */
-  object-fit: fill;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.tittle-portifolio {
-  color: white;
-  font-size: 35px;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.subtittle-portifolio {
-  color: white;
-  font-size: 18px;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.text-porfiolio {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem;
-  justify-content: space-between;
-}
-
-.button-view {
-  padding: 0.5rem 1.6rem;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #0f0f0f;
-  transition: transform 0.5s ease;
-}
-
-.button-view:hover {
-  transform: scale(1.02);
-}
 
 #Qualidade {
   display: flex;
@@ -747,8 +668,7 @@ footer {
 
   nav,
   #Home,
-  #Beneficios,
-  #Portifolio {
+  #Beneficios {
     display: none;
   }
 
@@ -766,8 +686,6 @@ footer {
   }
 
   footer {
-    padding: 0;
-    margin: 0;
     align-items: center;
   }
 

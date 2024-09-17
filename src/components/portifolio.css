@@ -1,0 +1,133 @@
+#Portifolio {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+}
+
+.portifolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.portifolio-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 88%;
+    gap: 1rem;
+}
+
+.item-portifolio {
+    width: 100%;
+    border: solid 1px #0e0f12;
+    border-radius: 15px;
+    padding-bottom: 0.5rem;
+}
+
+.image-portifolio {
+    width: 100%;
+    height: 340px;
+    object-fit: fill;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.tittle-portifolio {
+    color: white;
+    font-size: 35px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+.subtittle-portifolio {
+    color: white;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+
+.text-porfiolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.button-view {
+    padding: 0.5rem 1.6rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #0f0f0f;
+    transition: transform 0.5s ease;
+}
+
+.button-view:hover {
+    transform: scale(1.02);
+}
+
+.animate-fadeInUp {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .portifolio-list {
+        flex-direction: column;
+        width: 86%;
+        height: 100vh;
+    }
+
+    .item-portifolio {
+        margin-bottom: 1rem;
+    }
+
+    .image-portifolio {
+        height: 200px;
+    }
+
+    .tittle-portifolio {
+        font-size: 28px;
+    }
+
+    .subtittle-portifolio {
+        font-size: 16px;
+    }
+
+    .button-view {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tittle-portifolio {
+        font-size: 24px;
+    }
+
+    .subtittle-portifolio {
+        font-size: 14px;
+    }
+
+    .image-portifolio {
+        height: 150px;
+    }
+
+    .button-view {
+        padding: 0.5rem 0.8rem;
+    }
+}
