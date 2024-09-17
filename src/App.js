@@ -144,18 +144,19 @@ function App() {
           </div>
           <div className="footer-nav">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#beneficios">Benefícios</a></li>
-              <li><a href="#quemsomos">Quem Somos?</a></li>
+              <li><a className='list-nav' href="#Home">Home</a></li>
+              <li><a className='list-nav' href="#Beneficios">Benefícios</a></li>
+              <li><a className='list-nav' href="#Portifolio">Portfólio</a></li>
+              <li><a className='list-nav' href="#visaogeral">Quem Somos?</a></li>
             </ul>
           </div>
         </div>
         <div className="footer-social">
           <ul>
-            <li><a href="https://facebook.com" aria-label="Facebook" className="social-icon facebook"><i className="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://tiktok.com" aria-label="TikTok" className="social-icon tiktok"><i className="fab fa-tiktok"></i></a></li>
             <li><a href="https://instagram.com" aria-label="Instagram" className="social-icon instagram"><i className="fab fa-instagram"></i></a></li>
             <li><a href="https://twitter.com" aria-label="Twitter" className="social-icon twitter"><i className="fab fa-twitter"></i></a></li>
+            <li><a href="https://youtube.com" aria-label="YouTube" className="social-icon youtube"><i className="fab fa-youtube"></i></a></li>
           </ul>
         </div>
         <div className="footer-bottom">

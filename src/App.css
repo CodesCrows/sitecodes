@@ -637,14 +637,6 @@ footer {
   transition: color 0.3s ease;
 }
 
-.footer-social .social-icon:hover {
-  color: #1da1f2;
-}
-
-.footer-social .facebook:hover {
-  color: #3b5998;
-}
-
 .footer-social .instagram:hover {
   color: #e4405f;
 }
@@ -652,6 +644,15 @@ footer {
 .footer-social .twitter:hover {
   color: #1da1f2;
 }
+
+.footer-social .tiktok:hover {
+  color: #69c9d0;
+}
+
+.footer-social .youtube:hover {
+  color: #ff0000;
+}
+
 
 .footer-bottom {
   text-align: center;
@@ -681,7 +682,7 @@ footer {
     height: 270px;
   }
 
-  .text-formulario{
+  .text-formulario {
     font-size: 25px;
   }
 
