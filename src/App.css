@@ -664,6 +664,10 @@ footer {
   font-size: 0.875rem;
 }
 
+.fa-whatsapp{
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
   .sobresos {}

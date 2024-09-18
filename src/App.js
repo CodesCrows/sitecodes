@@ -132,7 +132,7 @@ function App() {
             <p className='texttwo-formulario'>Assuma o controle do seu projeto digital com a nossa agência de programação – sua solução completa para desenvolvimento e gestão de sites, onde quer que você esteja.</p>
           </div>
           <div>
-            <span className='button-navbar'>Orçamento</span>
+            <span className='button-navbar'><i className="fab fa-whatsapp"></i> Entrar em contato!</span>
           </div>
         </div>
       </div>
