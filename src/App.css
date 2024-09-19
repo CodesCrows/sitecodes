@@ -717,6 +717,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  #background-home{
+    height: 84vh;
+  }
+
   nav {
     z-index: 10;
   }
