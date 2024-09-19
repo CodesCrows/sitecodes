@@ -11,35 +11,60 @@ import react from './svg/program/react.svg';
 import Logo from './svg/logo.svg';
 import Beneficios from './components/beneficio';
 import Portifolio from './components/portifolio';
+import React, { useEffect, useState } from 'react';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
+  const [fadeIn, setFadeIn] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFadeIn(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const images = [
     javascript, angular, css, html, java, next, nodejs, npm, react,
     angular, css, html, javascript, nodejs, npm, java, next, react
   ];
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="Container">
-      <nav>
+      <nav className={fadeIn ? 'fade-in' : ''}>
         <div className='navbar-container'>
           <img className='logo-codecrows' src={Logo} alt="Codecrows Logo" width={75} />
-          <ul className='list-navbar'>
+
+          <div className='menu-toggle' onClick={toggleMobileMenu}>
+            <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></span>
+          </div>
+
+          <ul className={`list-navbar ${isMobileMenuOpen ? 'active' : ''}`}>
             <li><a className='list-nav' href="#Home">Home</a></li>
             <li><a className='list-nav' href="#Beneficios">Benefícios</a></li>
             <li><a className='list-nav' href="#Portifolio">Portfólio</a></li>
             <li><a className='list-nav' href="#visaogeral">Quem Somos?</a></li>
           </ul>
+
           <div className="svg-wrapper">
             <span className='button-navbar'>Começar</span>
           </div>
         </div>
       </nav>
-
-      <div id='Home'>
+      <div id='Home' className={fadeIn ? 'fade-in' : ''}>
         <div id='background-home'>
           <div>
             <p className='text-home'>CodeCrows - Transformando Ideias em Soluções Digitais</p>
-            <p className='texttwo-home'>Do planejamento ao lançamento, oferecemos suporte em cada etapa do desenvolvimento do seu website.</p>
+            <p className='texttwo-home'>
+              Do planejamento ao lançamento, oferecemos suporte em cada etapa do desenvolvimento do seu website.
+            </p>
           </div>
           <div className='buttons-home'>
             <button className='button-comecar'>Começar</button>
@@ -132,7 +157,7 @@ function App() {
             <p className='texttwo-formulario'>Assuma o controle do seu projeto digital com a nossa agência de programação – sua solução completa para desenvolvimento e gestão de sites, onde quer que você esteja.</p>
           </div>
           <div>
-            <span className='button-navbar'><i className="fab fa-whatsapp"></i> Entrar em contato!</span>
+            <span className='button-navbar'><i className="fab fa-whatsapp"></i><a className='whatsapp-link' href="https://wa.me/5531996864672?text=Boa%20tarde!%20Meu%20nome%20%C3%A9%20[Seu%20Nome].%20Estou%20interessado%20em%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20CodeCrows.%20Gostaria%20de%20saber%20sobre%20or%C3%A7amentos%20e%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.%20Agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20um%20retorno.%20Obrigado!"> Entrar em contato!</a></span>
           </div>
         </div>
       </div>
@@ -163,6 +188,7 @@ function App() {
           <p>&copy; 2024 CodeCrows. Todos os direitos reservados.</p>
         </div>
       </footer>
+      <ScrollToTopButton />
     </div>
   );
 }

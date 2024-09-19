@@ -9,20 +9,21 @@ const Portifolio = () => {
     threshold: 0.1,
   });
 
-  const { ref: itemRef, inView: itemInView } = useInView({
+  const { ref: titleRef, inView: titleInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
     <div id='Portifolio' ref={containerRef} className={`portifolio-container ${containerInView ? 'visible' : ''}`}>
-      <p className='tittle-visaogeral'>Portfólio</p>
+      <p ref={titleRef} className={`tittle-visaogeral animate-fadeInUp ${titleInView ? 'visible' : ''}`}>
+        Portfólio
+      </p>
       <div className='portifolio-list'>
         {[1, 2, 3].map((item, index) => (
           <div
             key={index}
-            className={`item-portifolio animate-fadeInUp ${itemInView ? 'visible' : ''}`}
-            ref={itemRef}
+            className={`item-portifolio animate-fadeInUp ${titleInView ? 'visible' : ''}`}
           >
             <div>
               <img className='image-portifolio' src={Notbook} alt={`Portfolio Item ${item}`} />
