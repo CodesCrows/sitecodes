@@ -178,8 +178,8 @@ function App() {
         </div>
         <div className="footer-social">
           <ul>
-            <li><a href="https://tiktok.com" aria-label="TikTok" className="social-icon tiktok"><i className="fab fa-tiktok"></i></a></li>
-            <li><a href="https://instagram.com" aria-label="Instagram" className="social-icon instagram"><i className="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@codescrows" aria-label="TikTok" className="social-icon tiktok"><i className="fab fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/codescrows/" aria-label="Instagram" className="social-icon instagram"><i className="fab fa-instagram"></i></a></li>
             <li><a href="https://twitter.com" aria-label="Twitter" className="social-icon twitter"><i className="fab fa-twitter"></i></a></li>
             <li><a href="https://youtube.com" aria-label="YouTube" className="social-icon youtube"><i className="fab fa-youtube"></i></a></li>
           </ul>
