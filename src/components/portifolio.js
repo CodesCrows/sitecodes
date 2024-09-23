@@ -34,7 +34,7 @@ const Portifolio = () => {
                 <p className='subtittle-portifolio'>Descrição</p>
               </div>
               <div>
-                <button className='button-view'>View</button>
+                <button className='button-view'> <a href='https://codescrows.github.io/SonarVibes/'>View</a></button>
               </div>
             </div>
           </div>
