@@ -157,7 +157,7 @@ function App() {
             <p className='texttwo-formulario'>Assuma o controle do seu projeto digital com a nossa agência de programação – sua solução completa para desenvolvimento e gestão de sites, onde quer que você esteja.</p>
           </div>
           <div>
-            <span className='button-navbar'><i className="fab fa-whatsapp"></i><a className='whatsapp-link' href="https://wa.me/5531996864672?text=Boa%20tarde!%20Meu%20nome%20%C3%A9%20[Seu%20Nome].%20Estou%20interessado%20em%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20CodeCrows.%20Gostaria%20de%20saber%20sobre%20or%C3%A7amentos%20e%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.%20Agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20um%20retorno.%20Obrigado!"> Entrar em contato!</a></span>
+            <button className='button-navbar'><i className="fab fa-whatsapp"></i><a className='whatsapp-link' href="https://wa.me/5531996864672?text=Boa%20tarde!%20Meu%20nome%20%C3%A9%20[Seu%20Nome].%20Estou%20interessado%20em%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20CodeCrows.%20Gostaria%20de%20saber%20sobre%20or%C3%A7amentos%20e%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.%20Agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20um%20retorno.%20Obrigado!"> Entrar em contato!</a></button>
           </div>
         </div>
       </div>

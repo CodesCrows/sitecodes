@@ -77,6 +77,11 @@ nav {
 .list-navbar.active {
   display: flex;
 }
+@media (max-width: 768px) {
+  .button-navbar {
+    display: block;
+  }
+}
 
 .button-navbar {
   padding: 0.3rem 0.5rem;
@@ -743,9 +748,6 @@ footer {
     height: 80px;
   }
 
-  .button-navbar{
-    display: none;
-  }
 
   .menu-toggle {
     display: flex;
